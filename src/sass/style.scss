@@ -1,0 +1,32 @@
+@import 'normalize';
+@import 'settings';
+@import 'fonts.css';
+
+//global styles
+
+//components
+@import 'components/btn';
+@import 'components/navigation';
+@import 'components/mainTitle';
+@import 'components/price';
+@import 'components/title';
+@import 'components/product';
+@import 'components/productSlider';
+@import 'components/productInfo';
+@import 'components/videoPlayer';
+@import 'components/aboutUs';
+@import 'components/delivery';
+@import 'components/phone';
+@import 'components/subscription';
+@import 'components/paymentMethod';
+@import 'components/copyright';
+@import 'components/reviewsSlder';
+//section
+@import 'sections/header';
+@import 'sections/footer';
+@import 'sections/description';
+@import 'sections/video';
+@import 'sections/reviews';
+@import 'sections/similarProducts';
+
+//pages

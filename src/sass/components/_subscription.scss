@@ -1,0 +1,23 @@
+.subscription{
+  background: none;
+  display: flex;
+  align-items: center;
+  &__label{
+    color: #7c7c7c;
+    @include CenturyGothic();
+    font-size: 12px;
+    line-height: 4.89px;
+  }
+  &__icons{
+    display: flex;
+    margin-left: 13px;
+    a{
+      margin-right: 10px;
+      opacity: .5;
+      transition: opacity 0.3s ease-out;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+}

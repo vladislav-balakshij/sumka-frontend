@@ -1,0 +1,32 @@
+.delivery{
+ &__subtitle{
+   color: $black;
+   height: 25px;
+   line-height: 29px;
+   @include BebasNeueBold();
+   font-size: 30px;
+   text-transform: uppercase;
+   background: none;
+   margin-left: 12px;
+ }
+  &__detail{
+    color: #848484;
+    @include CenturyGothic();
+    font-size: 12px;
+    line-height: 17px;
+    background: none;
+  }
+  &__itemHeader{
+    display: flex;
+    align-items: center;
+  }
+  &__icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    .novaposhta{
+      background: #ff721c;
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.btn{
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  height: 52px;
+  min-width: 140px;
+  max-width: 200px;
+  border: none;
+  outline: none;
+  color: $white;
+  @include BebasNeueBold();
+  cursor: pointer;
+  font-size: 21px;
+  text-transform: uppercase;
+  transition: filter 0.1s ease-in-out;
+  padding: 0 30px;
+  &:hover{
+    filter: brightness(1.1);
+  }
+  &--green{
+    background-color: #00a24b;
+  }
+  &--yellow{
+    background-color: #ff721c;
+  }
+}

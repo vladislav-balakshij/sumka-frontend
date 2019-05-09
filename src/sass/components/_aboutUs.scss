@@ -1,0 +1,56 @@
+.aboutUs{
+  &__title{
+
+  }
+  &__description{
+    background: none;
+    color: #848484;
+    @include CenturyGothic();
+    font-size: 12px;
+    line-height: 17px;
+  }
+  &__stats{
+    background: none;
+  }
+  &__statsItem{
+    height: 43px;
+    position: relative;
+    &:nth-child(odd){
+      span{
+        left:0;
+      }
+      div{
+        left:25px;
+      }
+    }
+    &:nth-child(even){
+      div,span{
+        text-align: right;
+      }
+      div{
+        right: 25px;
+      }
+      span{
+        right: 0;
+      }
+    }
+    span{
+      position: absolute;
+      color: #e0e0e0;
+      @include BebasNeueBold();
+      font-size: 61px;
+      text-transform: uppercase;
+      display: inline-block;
+
+    }
+    div{
+      top:25px;
+      position: absolute;
+      display: block;
+      color: $black;
+      @include BebasNeueBold();
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+  }
+}

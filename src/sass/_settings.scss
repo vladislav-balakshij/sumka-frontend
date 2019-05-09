@@ -1,0 +1,87 @@
+*{
+  box-sizing: border-box;
+}
+.clearfix{
+  &:after{
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+.overflow{
+  overflow: hidden;
+}
+.container{
+  max-width: 320px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+//colors
+$white: #ffffff;
+$grey: #f4f4f4;
+$black: #383838;
+$whiteGrey: #7f7f7f;
+.whiteBg{
+  background: $white;
+}
+.greyBg{
+  background: $grey;
+}
+.blackBg{
+  background: $black;
+}
+#label {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  color:$black
+
+}
+
+.slick-dots{
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  li{
+    font-size: 0;
+    margin: 0 10px;
+    button{
+      cursor: pointer;
+      display: block;
+      width: 10px !important;
+      height: 10px !important;
+      padding: 0;
+      background-color: $black;
+      opacity: 0.4;
+      border: none;
+      display: block;
+      border-radius: 50%;
+      outline: none;
+    }
+    &.slick-active{
+      button{
+        width: 15px !important;
+        height: 15px !important;
+        background-color: #ff721c;
+        opacity: 1;
+      }
+    }
+  }
+}
+@mixin basicBg($size){
+  background: url("../img/line.svg");
+  background-size: $size;
+}
+@mixin BebasNeueBold() {
+  font-family: 'Bebas Neue';
+  font-weight: 700;
+  font-style: normal;
+}
+@mixin CenturyGothic() {
+  font-family: 'Century Gothic';
+  font-weight: 400;
+  font-style: normal;
+}

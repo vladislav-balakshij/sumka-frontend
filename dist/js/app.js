@@ -1,0 +1,1 @@
+jQuery(function(e){e(".productSlider__container .slider").slick({dots:!0,infinite:!0,speed:500,fade:!0,arrows:!1,cssEase:"linear"}),e(".reviewsSlider").slick({dots:!0,infinite:!0,speed:500,fade:!0,arrows:!1,cssEase:"linear"})});

@@ -1,0 +1,22 @@
+.product{
+  &__title{
+    text-align: right;
+  }
+  &__price{
+    text-align: right;
+  }
+  &__image{
+    background-image: url("../img/board-m.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    display: flex;
+    .product__imageContainer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 214px;
+      height: 214px;
+    }
+  }
+}

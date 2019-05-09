@@ -1,0 +1,19 @@
+.navigation{
+  button{
+    padding: 0;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: opacity 0.3s;
+    &:hover{
+      opacity: 1;
+    }
+    .icons{
+      fill: $white
+    }
+  }
+}

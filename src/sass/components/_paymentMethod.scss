@@ -1,0 +1,23 @@
+.paymentMethod{
+  width: 224px;
+  display: flex;
+  justify-content: space-between;
+  background: none;
+  &__item{
+    width: 42px;
+    height: 25px;
+    background-image: url("../img/paymentMethods.png");
+    &.qiwi{
+      background-position: 0 0 ;
+    }
+    &.visa{
+      background-position: -61px 0;
+    }
+    &.mastercard{
+      background-position: -120px 0;
+    }
+    &.westernunion{
+      background-position: -182px 0;
+    }
+  }
+}

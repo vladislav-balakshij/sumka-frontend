@@ -1,0 +1,9 @@
+.phone{
+  opacity: 0.25;
+  color: $white;
+  @include BebasNeueBold();
+  font-size: 26px;
+  text-transform: uppercase;
+  background: none;
+  line-height: 23px;
+}

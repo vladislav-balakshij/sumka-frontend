@@ -1,0 +1,52 @@
+.productSlider{
+  &__container{
+    background: none;
+    .slick-list{
+      height: 320px;
+      *{
+        outline: none;
+      }
+      .slick-track{
+        height: 100%;
+      }
+    }
+  }
+  &__readmore {
+    color: $whiteGrey;
+    @include CenturyGothic();
+    font-size: 13px;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 0;
+    span{
+      display: block;
+      position: absolute;
+      top:0;
+      left:0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+    }
+    &:after{
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-right: 1px solid $whiteGrey;
+      border-bottom: 1px solid $whiteGrey;
+      display: block;
+      transform: rotate(45deg);
+      position: absolute;
+      left:0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+    }
+    &:hover{
+      span{
+        text-decoration: underline;
+      }
+    }
+  }
+}
