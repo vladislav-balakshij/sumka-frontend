@@ -1,14 +1,14 @@
 .productSlider{
-  &__container{
-    background: none;
-    .slick-list{
-      height: 320px;
-      *{
-        outline: none;
-      }
-      .slick-track{
-        height: 100%;
-      }
+  &__item{
+    text-align: center;
+  }
+  .slick-list{
+    height: 320px;
+    *{
+      outline: none;
+    }
+    .slick-track{
+      height: 100%;
     }
   }
   &__readmore {

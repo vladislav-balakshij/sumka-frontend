@@ -1,7 +1,4 @@
 .aboutUs{
-  &__title{
-
-  }
   &__description{
     background: none;
     color: #848484;
@@ -39,12 +36,16 @@
       color: #e0e0e0;
       @include BebasNeueBold();
       font-size: 61px;
+      height: 43px;
+      line-height: 50px;
       text-transform: uppercase;
       display: inline-block;
 
     }
     div{
-      top:25px;
+      top:15px;
+      height: 18px;
+      line-height: 18px;
       position: absolute;
       display: block;
       color: $black;

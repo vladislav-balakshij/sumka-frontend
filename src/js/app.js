@@ -1,5 +1,5 @@
 jQuery(function ($) {
-    $('.productSlider__container .slider').slick({
+    $('.productSlider.slider').slick({
         dots: true,
         infinite: true,
         speed: 500,
@@ -8,6 +8,14 @@ jQuery(function ($) {
         cssEase: 'linear'
     });
     $('.reviewsSlider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        arrows: false,
+        cssEase: 'linear'
+    });
+    $('.similarProducts__slider.slider').slick({
         dots: true,
         infinite: true,
         speed: 500,

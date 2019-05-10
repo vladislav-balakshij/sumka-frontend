@@ -6,6 +6,9 @@
   min-height: 570px;
   overflow: hidden;
 }
+.similarProductsSection{
+  height: 450px;
+}
 
 .btn{
   height: 50px;
@@ -34,19 +37,16 @@
     margin: 0 auto;
   }
 }
-.productSlider,.productInfo{
+.productInfo{
   min-height: 570px;
 }
 .productSlider{
+  height: 360px;
   .container{
     padding-top: 30px;
   }
   &__container{
-    width: 200px;
-    height: 360px;
-    @include basicBg(20px);
-    margin: 90px auto 0 auto;
-    overflow: hidden;
+    height: 570px !important;
   }
   &__readmore{
     width: 72px;

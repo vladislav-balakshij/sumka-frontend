@@ -1,0 +1,43 @@
+.similarProducts{
+  &__slider{
+    width: 230px;
+    height: 280px;
+  }
+  &__item{
+    height: 100%;
+    padding: 25px 30px;
+  }
+  &__imgContainer{
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+    background-color: $grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title{
+    margin-top: 25px;
+    color: $white;
+    @include BebasNeueBold();
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__price{
+    color: $white;
+    @include BebasNeueBold();
+    font-size: 24px;
+    text-align: center;
+    span{
+      font-size: 18px;
+    }
+  }
+  &__border{
+    height: 2px;
+    background: #d6d6d6;
+    margin: 15px 0;
+  }
+}
