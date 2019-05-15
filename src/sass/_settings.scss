@@ -1,54 +1,67 @@
-*{
+* {
   box-sizing: border-box;
 }
-.clearfix{
-  &:after{
+
+.clearfix {
+  &:after {
     content: '';
     clear: both;
     display: table;
   }
 }
-.overflow{
+
+.overflow {
   overflow: hidden;
 }
-.container{
+
+.container {
   max-width: 320px;
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
   height: 100%;
+  @media screen and (min-width: 1130px) {
+    max-width: 1130px;
+    padding: 0 15px;
+  }
 }
+
 //colors
 $white: #ffffff;
 $grey: #f4f4f4;
 $black: #383838;
 $whiteGrey: #7f7f7f;
-.whiteBg{
+.whiteBg {
   background: $white;
 }
-.greyBg{
+
+.greyBg {
   background: $grey;
 }
-.blackBg{
+
+.blackBg {
   background: $black;
 }
+
 #label {
   display: inline-block;
   width: 25px;
   height: 25px;
-  color:$black
+  color: $black
 
 }
 
-@mixin basicBg($size){
+@mixin basicBg($size) {
   background: url("../img/line.svg");
   background-size: $size;
 }
+
 @mixin BebasNeueBold() {
   font-family: 'Bebas Neue';
   font-weight: 700;
   font-style: normal;
 }
+
 @mixin CenturyGothic() {
   font-family: 'Century Gothic';
   font-weight: 400;

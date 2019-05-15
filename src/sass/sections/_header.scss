@@ -1,6 +1,9 @@
-.header{
+.header {
   background-image: url("../img/productBg-m.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-color: #cfbcb6;
+  @media screen and (min-width: 1130px) {
+    background-image: url("../img/productBg.jpg");
+  }
 }

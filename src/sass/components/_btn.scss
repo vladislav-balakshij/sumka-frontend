@@ -13,6 +13,13 @@
   text-transform: uppercase;
   transition: filter 0.1s ease-in-out;
   padding: 0 30px;
+  @media screen and (min-width: 1130px) {
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    border-radius: 35px;
+    box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.1);
+  }
   &:hover{
     filter: brightness(1.1);
   }

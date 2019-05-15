@@ -5,11 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./dist/css/basic.css">
-		<link rel="stylesheet" href="./dist/css/style.css">
+		<!--link(rel="stylesheet", href="./dist/css/style.css")-->
 		<link rel="stylesheet" href="./dist/css/fonts.css">
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<link rel="stylesheet" href="./dist/libs/slick/slick.css">
+		<script src="./dist/libs/jquery-3.4.1.min.js"></script>
 		<title>Сумка - Головна сторінка</title>
 	</head>
 	<body>
@@ -17,15 +16,16 @@
 			<div class="container">
 				<div class="product">
 					<div class="product__mainTitle mainTitle"></div>
-					<div class="product__title title">сумка jako black</div>
-					<div class="product__price price">843<span>&nbsp; грн</span></div>
+					<div class="product__title title"><span class="hidden">сумка jako black</span></div>
+					<div class="product__price price"><span class="hidden">843</span><span class="small hidden">&nbsp; грн</span></div>
 					<div class="clearfix"></div>
 					<div class="product__image">
-						<div class="product__imageContainer"><img src="dist/img/bag-small.png" height="118" width="91"></div>
+						<div class="product__imageContainer"><img data-src="dist/img/bag-small.png" height="118" width="91"></div>
 					</div>
 					<div class="clearfix"></div>
-					<button class="btn btn--green product__buy">купить</button>
+					<button class="btn btn--green product__buy"><span class="hidden">купить</span></button>
 				</div>
+				<div class="clearfix"></div>
 				<div class="navigation">
 					<button><?xml version="1.0" encoding="iso-8859-1"?>
 <svg version="1.1" class="icons label" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -107,59 +107,63 @@
 				<div class="greyBg">
 					<div class="container productSlider__container">
 						<div class="clearfix"></div>
-						<div class="title descriptionSection__title">Сумка jako black</div>
-						<div class="productSlider slider">
-							<div class="productSlider__item"><img src="dist/img/obag-middle.png"></div>
-							<div class="productSlider__item"><img src="dist/img/obag-middle.png"></div>
-							<div class="productSlider__item"><img src="dist/img/obag-middle.png"></div>
+						<div class="title descriptionSection__title"><span class="hidden">Сумка jako black</span></div>
+						<div class="productSlider">
+							<div class="slider">
+								<div class="productSlider__item hidden"><img data-src="dist/img/obag-middle.png" width="197" height="252"></div>
+								<div class="productSlider__item hidden"><img data-src="dist/img/obag-middle.png" width="197" height="252"></div>
+								<div class="productSlider__item hidden"><img data-src="dist/img/obag-middle.png" width="197" height="252"></div>
+							</div>
 						</div>
-						<button class="productSlider__readmore"><span>Описание</span></button>
+						<button class="productSlider__readmore"><span class="hidden">Описание</span></button>
 					</div>
 				</div>
 				<div class="container whiteBg">
 					<div class="productInfo">
-						<div class="productInfo__description">Стильные женские солцезащитные очки от Guess. Оправа крупная — 15 самтиметров в ширину, выполнена из черного и золотистого пластика. Стекла градиентные черные изнутри и золотистые зеркальные снаружи. 100% защита от ультрафиолета. Габариты линзы — 55х54 мм, ширина очков — 150 мм. Пластиковая оправа. Зеркальные стекла. Устойчивы к падению и царапинам. Комплектуются жестким фирменным футляром.</div>
+						<div class="productInfo__description"><span class="hidden">Стильные женские солцезащитные очки от Guess. Оправа крупная — 15 самтиметров в ширину, выполнена из черного и золотистого пластика. Стекла градиентные черные изнутри и золотистые зеркальные снаружи. 100% защита от ультрафиолета. Габариты линзы — 55х54 мм, ширина очков — 150 мм. Пластиковая оправа. Зеркальные стекла. Устойчивы к падению и царапинам. Комплектуются жестким фирменным футляром.</span></div>
 						<div class="border"></div>
-						<table class="productInfo__properties">
-							<tr>
-								<td>Страна-<br> производитель</td>
-								<td>Китай</td>
-							</tr>
-							<tr>
-								<td>Цвет кожи</td>
-								<td>Коричневий</td>
-							</tr>
-							<tr>
-								<td>Цвет вставок</td>
-								<td>Желтый</td>
-							</tr>
-							<tr>
-								<td>Цвет ручек</td>
-								<td>Красный</td>
-							</tr>
-							<tr>
-								<td>Категория</td>
-								<td>Для женщин</td>
-							</tr>
-							<tr>
-								<td>Состав</td>
-								<td>Поликарбонат</td>
-							</tr>
-							<tr>
-								<td>Материал</td>
-								<td>Пластик</td>
-							</tr>
-						</table>
+						<div class="productInfo__properties">
+							<table class="hidden">
+								<tr>
+									<td>Страна-<br> производитель</td>
+									<td>Китай</td>
+								</tr>
+								<tr>
+									<td>Цвет кожи</td>
+									<td>Коричневий</td>
+								</tr>
+								<tr>
+									<td>Цвет вставок</td>
+									<td>Желтый</td>
+								</tr>
+								<tr>
+									<td>Цвет ручек</td>
+									<td>Красный</td>
+								</tr>
+								<tr>
+									<td>Категория</td>
+									<td>Для женщин</td>
+								</tr>
+								<tr>
+									<td>Состав</td>
+									<td>Поликарбонат</td>
+								</tr>
+								<tr>
+									<td>Материал</td>
+									<td>Пластик</td>
+								</tr>
+							</table>
+						</div>
 						<div class="productInfo__footer">
-							<div class="productInfo__price price">843<span>&nbsp; грн</span></div>
-							<button class="btn btn--green">купить</button>
+							<div class="productInfo__price price"><span class="hidden">843</span><span class="small hidden">&nbsp; грн</span></div>
+							<button class="btn btn--green"><span class="hidden">купить</span></button>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section class="videoSection">
 				<div class="container">
-					<div class="videoPlayer">
+					<div class="videoPlayer hidden">
 						<div class="videoPlayer__mobile">
 							<video id="mobilePlayer" width="320" height="570" poster="dist/img/obeg-m.jpg">
 							<source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm>
@@ -222,53 +226,54 @@
 				<div class="container">
 					<div class="reviewsSection__title"></div>
 					<div class="reviewsSlider slider">
-						<div class="reviewsSlider__item slider--yellow">
+						<div class="reviewsSlider__item slider--yellow hidden">
 							<div class="reviewsSlider__header">
 								<div class="reviewsSlider__author">анатолий</div>
 								<div class="reviewsSlider__date">30.03.19</div>
 							</div>
 							<div class="reviewsSlider__comment">
 								<p>
-									Покупкой доволен, глазам комфортнее в разы, удобные. Качество очков отличное и они действительно помогают.Рекомендую.</p>
+									Покупкой доволен, глазам комфортнее в разы, удобные. Качество очков отличное и они действительно помогают.<br>Рекомендую.</p>
 								<p>
-									Очки очень понравились, качество отличное, и такая форма многим будет к лицу. покупкой довольна, рекомендую!   Спасибо!</p>
+									Очки очень понравились, качество отличное, и такая форма многим будет к лицу. покупкой довольна, рекомендую!<br>   Спасибо!</p>
 							</div>
 						</div>
-						<div class="reviewsSlider__item slider--red">
+						<div class="reviewsSlider__item slider--red hidden">
 							<div class="reviewsSlider__header">
 								<div class="reviewsSlider__author">анатолий</div>
 								<div class="reviewsSlider__date">30.03.19</div>
 							</div>
 							<div class="reviewsSlider__comment">
 								<p>
-									Покупкой доволен, глазам комфортнее в разы, удобные. Качество очков отличное и они действительно помогают.Рекомендую.</p>
+									Покупкой доволен, глазам комфортнее в разы, удобные. Качество очков отличное и они действительно помогают.<br>Рекомендую.</p>
 								<p>
-									Очки очень понравились, качество отличное, и такая форма многим будет к лицу. покупкой довольна, рекомендую!   Спасибо!</p>
+									Очки очень понравились, качество отличное, и такая форма многим будет к лицу. покупкой довольна, рекомендую!<br>   Спасибо!</p>
 							</div>
 						</div>
-						<div class="reviewsSlider__item slider--violet">
+						<div class="reviewsSlider__item slider--violet hidden">
 							<div class="reviewsSlider__header">
 								<div class="reviewsSlider__author">анатолий</div>
 								<div class="reviewsSlider__date">30.03.19</div>
 							</div>
 							<div class="reviewsSlider__comment">
 								<p>
-									Покупкой доволен, глазам комфортнее в разы, удобные. Качество очков отличное и они действительно помогают.Рекомендую.</p>
+									Покупкой доволен, глазам комфортнее в разы, удобные. Качество очков отличное и они действительно помогают.<br>Рекомендую.</p>
 								<p>
-									Очки очень понравились, качество отличное, и такая форма многим будет к лицу. покупкой довольна, рекомендую!   Спасибо!</p>
+									Очки очень понравились, качество отличное, и такая форма многим будет к лицу. покупкой довольна, рекомендую!<br>   Спасибо!</p>
 							</div>
 						</div>
 					</div>
-					<button class="btn btn--yellow reviewsSection__btn">написать отзыв</button>
+					<button class="btn btn--yellow reviewsSection__btn"><span class="hidden">написать отзыв</span></button>
 				</div>
 			</section>
 			<section class="aboutSection">
 				<div class="container">
 					<div class="aboutUs">
-						<div class="title aboutUs__title">Почему мы?</div>
+						<div class="title aboutUs__title"><span class="hidden">Почему мы?</span></div>
 						<div class="aboutUs__description">
-							<p>Вы также можете заказать доставку товара на отделение «Новой почты», указанное при оформлении заказа. Отправка возможна по предоплате либо наложенным платежом.<br>Доставка бесплатная.<p>
-							<p>Обращаем ваше внимание, что товар в отделениях «Новой почты» хранится бесплатно в течение 5-ти рабочих дней. Отсчет начинается со дня поступления посылки на склад, воскресенье и праздничные дни не учитываются.</p>
+							<p class="hidden">
+								Вы также можете заказать доставку товара на отделение «Новой почты», указанное при оформлении заказа. Отправка возможна по предоплате либо наложенным платежом.<br>Доставка бесплатная.</p>
+							<p class="hidden">Обращаем ваше внимание, что товар в отделениях «Новой почты» хранится бесплатно в течение 5-ти рабочих дней. Отсчет начинается со дня поступления посылки на склад, воскресенье и праздничные дни не учитываются.</p>
 						</div>
 					</div>
 					<div class="aboutUs__stats">
@@ -438,6 +443,7 @@
 				<div class="copyright">© 2018 Купи маме сумку</div>
 			</div>
 		</footer>
+		<script src="./dist/libs/slick/slick.min.js"></script>
 		<script src="src/js/app.js"></script>
 	</body>
 </html>

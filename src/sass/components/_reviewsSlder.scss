@@ -19,6 +19,8 @@
     @include CenturyGothic();
     font-size: 12px;
     line-height: 17px;
+    margin-top: 10px;
+    max-width: 220px;
   }
   &__header{
     display: flex;
@@ -27,10 +29,10 @@
   }
   &__item{
     height: 310px;
-    padding: 20px;
+    padding: 15px 20px;
 
   }
   .slick-list,.slick-track{
-    height: 330px;
+    height: 310px;
   }
 }

@@ -1,5 +1,5 @@
 jQuery(function ($) {
-    $('.productSlider.slider').slick({
+    $('.productSlider .slider').slick({
         dots: true,
         infinite: true,
         speed: 500,
@@ -22,5 +22,9 @@ jQuery(function ($) {
         fade: true,
         arrows: false,
         cssEase: 'linear'
+    });
+    $('.hidden').removeClass('hidden');
+    $('[data-src]').each(function (i,e) {
+        $(this).attr('src', $(this).attr('data-src'));
     });
 });

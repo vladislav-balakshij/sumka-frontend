@@ -5,5 +5,10 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: auto;
+  @media screen and (min-width: 1130px) {
+      width: 518px;
+      height: 90px;
+      background-image: url("../img/mainTitle-d.png");
+  }
 }
 

@@ -1,22 +1,43 @@
-.product{
-  &__title{
+.product {
+  &__title {
     text-align: right;
   }
-  &__price{
+  &__price {
     text-align: right;
   }
-  &__image{
+  &__image {
     background-image: url("../img/board-m.png");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: 50% 0;
     display: flex;
-    .product__imageContainer{
+  }
+  &__imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 214px;
+    height: 214px;
+  }
+  @media screen and (min-width: 1130px) {
+    &__image {
+      background-image: url("../img/board.png");
+      .product__imageContainer {}
+    }
+    &__imageContainer {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 214px;
-      height: 214px;
+      width: 230px;
+      height: 230px;
+      background-color: $grey;
+      border-radius: 50%;
+      margin: 55px 0 0 140px;
+    }
+    .btn--green{
+      border-radius: 35px;
+      border: 2px solid #ffff72;
+      color: #ffff6a;
     }
   }
 }

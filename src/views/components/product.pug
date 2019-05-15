@@ -1,11 +1,14 @@
 .product
     .product__mainTitle.mainTitle
-    .product__title.title сумка jako black
-    .product__price.price 843
-        span &nbsp; грн
+    .product__title.title
+        span.hidden сумка jako black
+    .product__price.price
+        span.hidden 843
+        span.small.hidden &nbsp; грн
     .clearfix
     .product__image
         .product__imageContainer
-            img(src="dist/img/bag-small.png" height="118" width="91")
+            img(data-src="dist/img/bag-small.png" height="118" width="91")
     .clearfix
-    button.btn.btn--green.product__buy купить
+    button.btn.btn--green.product__buy
+        span.hidden купить
