@@ -1,0 +1,25 @@
+.productInfo{
+  height: 615px;
+  padding: 30px 0;
+  &__description{
+    min-height: 187px;
+  }
+  &__border{
+    height: 1px;
+    margin: 30px 0;
+  }
+  &__properties{
+    width: 100%;
+    min-height: 174px;
+    table{
+      width: 100%;
+    }
+  }
+  &__footer{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+}

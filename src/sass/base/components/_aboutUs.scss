@@ -1,0 +1,21 @@
+.aboutUs{
+  &__title{
+    .mask{
+      width: 120px;
+      right: 0;
+      left: auto;
+    }
+  }
+  &__description{
+    margin-top: 18px;
+    min-height: 215px;
+  }
+  &__stats{
+    margin-top: 40px;
+    min-height: 210px;
+  }
+  &__statsItem{
+    height: 43px;
+    margin-bottom: 10px;
+  }
+}

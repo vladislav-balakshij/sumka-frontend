@@ -1,14 +1,18 @@
 .product
-    .product__mainTitle.mainTitle
-    .product__title.title
+    .product__mainTitle.mainTitle.animated-background
+    .product__title.title.animated-background
+        .mask
         span.hidden сумка jako black
-    .product__price.price
+    .product__price.price.animated-background
+        .mask
         span.hidden 843
         span.small.hidden &nbsp; грн
     .clearfix
-    .product__image
-        .product__imageContainer
+    .product__image.animated-background
+        .mask
+        .mask.mask--bottom
+        .product__imageContainer.hidden
             img(data-src="dist/img/bag-small.png" height="118" width="91")
     .clearfix
-    button.btn.btn--green.product__buy
+    button.btn.btn--green.product__buy.animated-background
         span.hidden купить

@@ -1,0 +1,16 @@
+.productSlider{
+  height: 360px;
+  width: 200px;
+  margin: 120px auto 0 auto;
+  &__container{
+    height: 570px !important;
+    padding-top: 30px !important;
+  }
+  &__readmore{
+    width: 72px;
+    min-height: 24px;
+    border: none;
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+}

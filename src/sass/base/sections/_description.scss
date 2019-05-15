@@ -1,0 +1,35 @@
+.descriptionSection {
+  position: relative;
+  &__title {
+    margin: 0 auto;
+    position: absolute;
+    left:0;
+    right:0;
+    top:30px;
+    .mask {
+      background: #f4f4f4;
+
+      &--after {
+        width: 30px;
+        left: 0;
+      }
+
+      &--before {
+        width: 30px;
+        right: 0;
+      }
+    }
+  }
+  @media screen and (min-width: 1130px) {
+    max-width: 1130px;
+    display: flex;
+    margin: 0 auto;
+    & > div {
+      margin: 0;
+      width: 50%;
+      &:nth-child(2){
+        order: 3;
+      }
+    }
+  }
+}

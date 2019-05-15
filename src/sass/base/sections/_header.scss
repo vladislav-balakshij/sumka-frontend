@@ -1,0 +1,21 @@
+.header{
+  height: 568px;
+  .navigation{
+    width: 285px;
+    margin: 30px auto 0 auto;
+  }
+  @media screen and (min-width: 1130px) {
+    height: 680px;
+    .product{
+      float: right;
+      margin-top: 50px;
+    }
+    .navigation{
+      width: 27px;
+      margin: 0;
+      position: absolute;
+      right: -64px;
+      top:196px;
+    }
+  }
+}

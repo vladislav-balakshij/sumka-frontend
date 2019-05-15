@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
-
+body{
+  margin:0;
+}
 .clearfix {
   &:after {
     content: '';
@@ -9,7 +11,6 @@
     display: table;
   }
 }
-
 .overflow {
   overflow: hidden;
 }
@@ -49,6 +50,50 @@ $whiteGrey: #7f7f7f;
   height: 25px;
   color: $black
 
+}
+
+@-webkit-keyframes placeHolderShimmer{
+  0%{
+    background-position:-468px 0
+  }
+  100%{
+    background-position:468px 0
+  }
+}
+
+@keyframes placeHolderShimmer{
+  0%{
+    background-position:-468px 0
+  }
+  100%{
+    background-position:468px 0
+  }
+}
+.animated-background {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+  animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: #eeeeee;
+  background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee), color-stop(18%, #dddddd), color-stop(33%, #eeeeee));
+  background: -webkit-linear-gradient(left, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background: linear-gradient(to right,  #eeeeee 8%,#dddddd 18%,#eeeeee 33%);
+  -webkit-background-size: 800px 104px;
+  background-size: 800px 104px;
+  position: relative;
+}
+.mask{
+  background: $white;
+  position: absolute;
+  height: 100%;
+  top:0;
 }
 
 @mixin basicBg($size) {

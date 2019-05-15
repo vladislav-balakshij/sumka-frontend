@@ -1,0 +1,10 @@
+.btn{
+  height: 50px;
+  min-width: 140px;
+  display: block;
+  border:none;
+  @media screen and (min-width: 1130px) {
+    width: 200px;
+    height: 72px;
+  }
+}

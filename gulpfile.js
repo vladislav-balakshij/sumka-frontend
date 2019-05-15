@@ -77,8 +77,7 @@ gulp.task('serve', function() {
             baseDir: './'
         }
     });
-    gulp.watch(folders.src + "/sass/*/*", gulp.series('sass'));
-    gulp.watch(folders.src + "/sass/*", gulp.series('sass'));
+    gulp.watch([folders.src + "/sass/*",folders.src + "/sass/*/*",folders.src + "/sass/*/*/*"], gulp.series('sass'));
     gulp.watch([folders.src + "/img/*" , folders.src + "/img/*/*"], gulp.series('img'));
     gulp.watch([folders.src + "/views/*/*/*",folders.src + "/views/*/*",folders.src + "/views/*"], gulp.series('pug'));
     gulp.watch(folders.src + "/js/*", gulp.series('compressJs'));

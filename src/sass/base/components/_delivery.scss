@@ -1,0 +1,17 @@
+.delivery{
+  &__item{
+    min-height: 370px;
+    margin-top: 30px;
+    padding: 20px;
+  }
+  &__itemHeader{
+    height: 25px;
+  }
+  &__subtitle{
+    height: 21px;
+  }
+  &__detail{
+    margin-top: 15px;
+    min-height: 280px;
+  }
+}

@@ -7,289 +7,33 @@ p{
   padding: 10px 0;
   margin: 0;
 }
-.btn{
-  height: 50px;
-  min-width: 140px;
-  display: block;
-}
 .border{
   height: 2px;
   margin: 30px 0;
   background: #e8e8e8;
 }
-.title{
-  min-width: 224px;
-  height: 29px;
-  line-height: 32px;
-  max-height: initial;
-  @include basicBg(8px);
-}
-.price{
-  min-width: 67px;
-  height: 21px;
-  line-height: 25px;
-  @include basicBg(8px);
-}
-.phone{
-  width: 174px;
-  height: 19px;
-  @include basicBg(3px);
-}
-.subscription{
-  width: 160px;
-  height: 22px;
-  @include basicBg(3px);
-}
-.paymentMethod{
-  width: 224px;
-  height: 25px;
-  @include basicBg(3px);
-}
-.copyright{
-  width: 164px;
-  height: 13px;
-  @include basicBg(3px);
-}
-//Items end
-//Sections
-.header{
-  height: 568px;
-  @media screen and (min-width: 1130px) {
-    height: 680px;
-    .product{
-      float: right;
-      margin-top: 50px;
-    }
-  }
-}
-.videoSection,.aboutSection{
-  height: 570px;
-  overflow: hidden;
-}
-.reviewsSection{
-  height: 580px;
-}
-.similarProductsSection{
-  height: 450px;
-}
-.descriptionSection{
-  &__title{
-    margin: 0 auto;
-  }
-}
-.videoSection{
-  @include basicBg(20px);
-  height: 570px;
-}
-.aboutSection{
-  padding: 30px 0;
-}
-.reviewsSection{
-  &__title{
-    width: 130px;
-    height: 83px;
-    margin: 0 auto;
-    @include basicBg(8px)
-  }
-  &__btn{
-    margin: 30px auto 0 auto;
-  }
-}
-.similarProductsSection{
-  height: 480px;
-  &__title{
-    width: 226px;
-    height: 83px;
-    margin: 0 auto;
-    @include basicBg(8px)
-  }
-  &__slider{
-    margin: 30px auto 0 auto;
-    width: 226px;
-    height: 320px;
-    @include basicBg(20px)
-  }
-}
-.footer{
-  min-height: 247px;
-  padding-top: 50px;
-  .phone{
-    margin: 0 auto;
-  }
-  .subscription{
-    margin: 10px auto 0 auto;
-  }
-  .paymentMethod{
-    margin: 40px auto 0 auto;
-  }
-  .copyright{
-    margin: 20px auto 0 auto;
-  }
-}
-//Sections end
-//Components
-.productInfo{
-  height: 615px;
-}
-.productSlider{
-  height: 360px;
-  &__container{
-    height: 570px !important;
-    padding-top: 30px !important;
-  }
-  &__readmore{
-    width: 72px;
-    min-height: 24px;
-    border: none;
-    @include basicBg(8px);
-    display: block;
-    margin: 20px auto 0 auto;
-  }
-}
-.productInfo{
-  padding: 30px 0;
-  &__description{
-    min-height: 187px;
-    @include basicBg(8px);
-  }
-  &__border{
-    height: 1px;
-    margin: 30px 0;
-  }
-  &__properties{
-    @include basicBg(8px);
-    width: 100%;
-    min-height: 174px;
-    table{
-      width: 100%;
-    }
-  }
-  &__footer{
-    margin-top: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
-  }
-}
-.videoPlayer{
-  &__mobile{
-    height: 570px;
-    width: 100px;
-    overflow: hidden;
-  }
-}
-.reviewsSlider{
-  height: 356px;
-  margin: 30px auto 0 auto;
-  @include basicBg(20px)
-}
-
-.aboutUs{
-  &__description{
-    margin-top: 10px;
-    min-height: 215px;
-    @include basicBg(20px)
-  }
-  &__stats{
-    margin-top: 40px;
-    min-height: 210px;
-    @include basicBg(20px)
-  }
-}
-.delivery{
-  &__item{
-    min-height: 370px;
-    margin-top: 30px;
-    padding: 20px;
-  }
-  &__subtitle{
-    height: 21px;
-    @include basicBg(8px)
-  }
-  &__detail{
-    margin-top: 5px;
-    min-height: 280px;
-    @include basicBg(20px)
-  }
-}
-.product{
-  &__mainTitle{
-    width: 285px;
-    height: 55px;
-    margin: 0 auto;
-    @include basicBg(12px);
-  }
-  &__title{
-    margin-top: 38px;
-    float: right;
-  }
-  &__price{
-    margin-top: 18px;
-    float: right;
-  }
-  &__image{
-    margin-top: 18px;
-    height: 258px;
-    width: 256px;
-    float: right;
-    @include basicBg(20px);
-  }
-  &__buy{
-    margin: 0 auto;
-  }
-  @media screen and (min-width: 1130px) {
-    width: 563px;
-    height: 588px;
-    position: relative;
-    &__mainTitle{
-      margin: 0px;
-      width: 528px;
-      height: 90px;
-    }
-    &__title{
-      position: absolute;
-      top:405px;
-      left:102px;
-      right: 0;
-      margin:0;
-      text-align: center !important;
-      width: 300px;
-      display: block;
-    }
-    &__price{
-      position: absolute;
-      bottom: 25px;
-      left: 95px;
-    }
-    &__image{
-      width: 554px;
-      height: 443px;
-      min-width: 554px;
-      min-height: 443px;
-      float: none;
-      margin: 0;
-    }
-    &__buy{
-      margin: 0px;
-      position: absolute;
-      bottom: 0;
-      right: 145px;
-    }
-  }
-}
-.navigation{
-  height: 25px;
-  margin-top: 30px;
-  display: flex;
-  padding: 0 10px;
-  justify-content: space-between;
-  button{
-    width: 25px;
-    height: 25px;
-    padding: 0;
-    @include basicBg(8px);
-    border: none;
-  }
-}
-
+//sections
+@import "base/sections/header";
+@import "base/sections/description";
+@import "base/sections/video";
+@import "base/sections/reviews";
+@import "base/sections/about";
+@import "base/sections/similarProducts";
+@import "base/sections/footer";
+//components
+@import "base/components/title";
+@import "base/components/price";
+@import "base/components/phone";
+@import "base/components/subscription";
+@import "base/components/paymentMethod";
+@import "base/components/copyright";
+@import "base/components/productSlider";
+@import "base/components/productInfo";
+@import "base/components/videoPlayer";
+@import "base/components/reviewsSlider";
+@import "base/components/aboutUs";
+@import "base/components/delivery";
+@import "base/components/product";
+@import "base/components/navigation";
+@import "base/components/similarProducts";
+@import "base/components/btn";
