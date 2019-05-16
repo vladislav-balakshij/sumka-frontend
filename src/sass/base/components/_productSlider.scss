@@ -1,5 +1,5 @@
 .productSlider{
-  height: 360px;
+  height: 350px;
   width: 200px;
   margin: 120px auto 0 auto;
   &__container{
@@ -12,5 +12,13 @@
     border: none;
     display: block;
     margin: 20px auto 0 auto;
+  }
+  @media screen and (min-width: 1130px) {
+    width: 350px;
+    height: 450px;
+    margin: 95px auto 0 auto;
+    &__readmore{
+      display: none;
+    }
   }
 }

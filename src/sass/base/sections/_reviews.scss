@@ -8,4 +8,22 @@
   &__btn{
     margin: 30px auto 0 auto;
   }
+  @media screen and (min-width: 1130px) {
+    .container{
+      position: relative;
+    }
+    &__title{
+      width: 177px;
+      height: 109px;
+      margin: 0;
+    }
+    &__btn{
+      margin: 0;
+      top: 60px;
+      right: 15px;
+      position: absolute;
+      width: 180px !important;
+      height: 50px !important;
+    }
+  }
 }

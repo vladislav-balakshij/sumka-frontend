@@ -3,4 +3,7 @@
   height: 26px;
   line-height: 32px;
   max-height: initial;
+  @media screen and (min-width: 1130px) {
+    height: 34px;
+  }
 }

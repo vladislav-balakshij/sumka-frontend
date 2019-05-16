@@ -22,14 +22,38 @@
   }
   @media screen and (min-width: 1130px) {
     max-width: 1130px;
+    height: 680px;
+    padding: 0 15px 0 15px;
     display: flex;
     margin: 0 auto;
+    .container{
+      padding: 0;
+    }
     & > div {
       margin: 0;
-      width: 50%;
       &:nth-child(2){
         order: 3;
+        width: 100%;
+      }
+      &:nth-child(3){
+        width: 660px;
+        min-width: 660px;
       }
     }
+    &__title {
+      top:68px;
+      left: 15px;
+      width: 660px;
+      min-width: 660px;
+      z-index: 99;
+      .mask--after{
+        display: none;
+      }
+      .mask--before{
+        width: 310px;
+        background: $white;
+      }
+    }
+
   }
 }
